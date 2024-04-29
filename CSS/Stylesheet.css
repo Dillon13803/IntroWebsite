@@ -1,0 +1,85 @@
+nav {
+    
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    background-color: #333; 
+    padding: 10px 20px; 
+}
+nav img {
+    margin-right: 10px; 
+    
+    
+}
+
+#logolink
+{
+    background-color: #333;
+}
+#logolink2
+{
+    background-color: #333;
+}
+
+.brand .guard {
+    
+    color: white;
+    margin-top: 0; 
+    margin-left: 16px;
+    font-size: 22px;
+   
+}
+
+nav ol {
+    
+    list-style-type: none; 
+    margin: 0;
+    padding: 0;
+    order: 3;
+   
+}
+
+nav li {
+    
+    display: inline; 
+    margin-right: 20px; 
+   
+}
+
+nav a {
+    
+    border-radius: 5px;
+    background-color: darkgray;
+    padding: 7px 13px;
+
+    color: black; 
+    text-decoration: none; 
+    
+}
+
+
+
+nav a:hover {
+    transition: .5s;
+    text-decoration: underline; 
+}
+
+
+  
+  main {
+     flex: 1;
+  }
+  
+  footer{
+     margin-top: auto;
+     margin-bottom: 0;
+  }
+  
+  
+  body{
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+   }
+  
+  
