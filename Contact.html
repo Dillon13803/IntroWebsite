@@ -27,7 +27,7 @@
         const issueDescription = document.getElementById('issue-description');
 
         if (fullName.value.trim() === '' || companyName.value.trim() === '' || email.value.trim() === '' || service.value === 'None' || monitoring.value === 'None' || issueDescription.value.trim() === '') {
-            alert
+            alert('Please fill out all fields.');
             return; 
         }
 
@@ -39,7 +39,6 @@
         monitoring.value = 'None';
         issueDescription.value = '';
 
-        
         alert('Form submitted successfully!');
     });
 });
