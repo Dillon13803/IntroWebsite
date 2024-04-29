@@ -29,10 +29,11 @@
             const issueDescription = document.getElementById('issue-description').value.trim();
 
             
-            if (fullName === '' || companyName === '' || email === '' || service === ' ' || monitoring === ' ' || issueDescription === '') {
+            if (fullName === '' || companyName === '' || email === '' || service === 'None' || monitoring === 'None' || issueDescription === '') {
                 alert('Please fill out all fields.');
                 return; 
             }
+
 
             
             form.submit();
