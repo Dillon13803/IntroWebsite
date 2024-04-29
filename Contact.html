@@ -13,37 +13,33 @@
 
   gtag('config', 'G-N52J46TV3Y');
 
- document.addEventListener("DOMContentLoaded", function() {
-    const form = document.querySelector('form');
-
-    form.addEventListener('submit', function(event) {
-        event.preventDefault(); 
-
-        const fullName = document.getElementById('full-name');
-        const companyName = document.getElementById('company-name');
-        const email = document.getElementById('email');
-        const service = document.getElementById('service');
-        const monitoring = document.getElementById('monitoring');
-        const issueDescription = document.getElementById('issue-description');
-
-        
-        if (fullName.value.trim() === '' || companyName.value.trim() === '' || email.value.trim() === '' || service.value === 'None' || monitoring.value === 'None' || issueDescription.value.trim() === '') {
-            alert('Please fill out all fields.');
-            return; 
-        }
-
   
-        fullName.value = '';
-        companyName.value = '';
-        email.value = '';
-        service.value = 'None';
-        monitoring.value = 'None';
-        issueDescription.value = '';
+    document.addEventListener("DOMContentLoaded", function() {
+        const form = document.querySelector('form');
 
-       
-        alert('Form submitted successfully!');
+        form.addEventListener('submit', function(event) {
+            event.preventDefault(); 
+
+            
+            const fullName = document.getElementById('full-name').value.trim();
+            const companyName = document.getElementById('company-name').value.trim();
+            const email = document.getElementById('email').value.trim();
+            const service = document.getElementById('service').value;
+            const monitoring = document.getElementById('monitoring').value;
+            const issueDescription = document.getElementById('issue-description').value.trim();
+
+            
+            if (fullName === '' || companyName === '' || email === '' || service === 'None' || monitoring === 'None' || issueDescription === '') {
+                alert('Please fill out all fields.');
+                return; 
+            }
+
+
+            
+            form.submit();
+        });
     });
-});
+
 
 </script>
 
@@ -184,7 +180,7 @@
             font-size: 17px;
 }
 
-     </style>
+    </style>
 </head>
 <body>
     
