@@ -5,13 +5,19 @@
     <link rel="Stylesheet2" href="CSS/Stylesheet2.css">
   
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-N52J46TV3Y"></script>
-    <script>
+    
         
-  
+  function validateForm() {
+        var fullName = document.getElementById('full-name').value;
+        var companyName = document.getElementById('company-name').value;
+        var email = document.getElementById('email').value;
+        var service = document.getElementById('service').value;
+        var monitoring = document.getElementById('monitoring').value;
+        var issueDescription = document.getElementById('issue-description').value;
 
         if (fullName === '' || companyName === '' || email === '' || service === 'None' || monitoring === 'None' || issueDescription === '') {
             alert('Please fill in all fields');
-            return false; // Prevent form submission
+            return false; 
         }
 
         return true; 
@@ -171,7 +177,7 @@
             <div class="brand">
                 <h3 class="guard">CryptoGuard</h3>
                 <a id="logolink" href="index.html">
-                    <img src="Pictures/Logo.jpg" width="130" height="100" alt="HeaderLogo">
+                    <img src="pictures/Logo.jpg" width="130" height="100" alt="HeaderLogo">
                 </a>
             </div>
             <ol>
@@ -189,13 +195,13 @@
             <div class="titleText"> <h2 > Please fill out the form below, and an agent will reach out to you</h2></div>
     </div>
     <div class="container">
-        <img src="Pictures/an-infographic-depicting-cyber-threats-e60231-1024.jpg" alt="Cyber Threats">
+        <img src="pictures/an-infographic-depicting-cyber-threats-e60231-1024.jpg" alt="Cyber Threats">
         
         
        
         <div class="form-container">
             <h2>Contact Us</h2>
-            <form action="#" method="post">
+            <form action="#" method="post" onsubmit="return validateForm()">
                 <div class="form-group">
                     <label for="full-name">Full Name:</label>
                     <input type="text" id="full-name" name="full-name" required>
@@ -251,7 +257,7 @@
         <div class="brand">
             <h3 class="guard">CryptoGuard</h3>
             <a id="logolink2" href="index.html">
-                <img src="Pictures/Logo.jpg" width="130" height="100" alt="FooterLogo">
+                <img src="pictures/Logo.jpg" width="130" height="100" alt="FooterLogo">
                 <h3 style="color: white;">Copyright &copy; 2024 CryptoGuard LLC. All rights reserved.</h3>
             </a>
         </div>
