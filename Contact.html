@@ -19,6 +19,7 @@
     form.addEventListener('submit', function(event) {
         event.preventDefault(); 
 
+       
         const fullName = document.getElementById('full-name').value.trim();
         const companyName = document.getElementById('company-name').value.trim();
         const email = document.getElementById('email').value.trim();
@@ -26,6 +27,7 @@
         const monitoring = document.getElementById('monitoring').value;
         const issueDescription = document.getElementById('issue-description').value.trim();
 
+        // Example validation: Check if any field is empty
         if (fullName === '' || companyName === '' || email === '' || service === 'None' || monitoring === 'None' || issueDescription === '') {
             alert('Please fill out all fields.');
             return; 
@@ -34,7 +36,6 @@
       
     });
 });
-   
 
 </script>
 
