@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="CSS/Stylesheet.css">
+    <link rel="Stylesheet2" href="CSS/Stylesheet2.css">
+  
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-N52J46TV3Y"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'G-N52J46TV3Y');
+    </script>
+    
+    <meta charset="UTF-8">
+    <meta name="description" content="Cybersecurity, Consulting, Cybersecurity Consulting, Security, IDS, IPS, Company security training, Company Cybersecurity training, Pentesting, Penetration Testing Service, APT, Advance persistent threat">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="Dillon Barnhardt">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Home</title>
+    
+    <style>
+       
+.container {
+    display: flex;
+    justify-content: space-between;
+    
+    position: relative; 
+    min-height: 100vh;  
+   
+    
+
+   
+    
+}
+
+
+.container img { /* container for img that is inside container div*/
+    margin-top: 8px;
+    width: 620px;
+    height: 730px;
+    padding-right: 10px;
+}
+
+
+.form-container {
+    margin-top: 8px;
+    margin-right: 10px;
+    
+    
+    width: calc(50% - 10px); 
+    padding: 20px;
+    background-color: rgb(54, 216, 208);
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    height: 650px;
+}
+
+
+.form-container form {
+    margin-top: 50px; /* This is used to adjust margin from the top to the top of the form */
+    margin-bottom: 300px;
+}
+
+
+.form-container h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+
+.form-group {
+    margin-bottom: 15px;
+    margin-right: 5px;
+}
+
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+
+.form-group button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-bottom: 0px;
+}
+.content {
+    width: calc(50% - 10px);
+    padding: 20px;
+    box-sizing: border-box; 
+}
+
+.form-group button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+
+
+.overall{
+    background-color: #151F59;
+}
+
+.gray-rectangle {
+    margin-top: 8px;
+    margin-left: 360px;
+    border-radius: 5px;
+    background-color: rgb(54, 216, 208); 
+    width: 450px; /* Used to adjust width for the div that the text is in */
+    height: 140px; /* used to adjust the height for the div that the text is in */
+    position: relative; 
+
+}
+
+.titleText {
+    
+    position: absolute; /* Way to put text above the form */
+    top: 27%; /* Move text vertically within the rectangle div*/
+    left: 30%; /* Move text horizontally  within the rectangle div*/
+    transform: translate(-25%, -25%); 
+    color: #000000; /* Makes the text Black */
+    text-align: center; 
+    font-family: 'Times New Roman', Times, serif, Helvetica, sans-serif; /* font for the text*/
+            font-size: 17px;
+}
+
+    </style>
+</head>
+<body>
+    
+    <header>
+        <nav>
+           
+            <div class="brand">
+                <h3 class="guard">CryptoGuard</h3>
+                <a id="logolink" href="index.html">
+                    <img src="pictues/Logo.jpg" width="130" height="100" alt="Logo">
+                </a>
+            </div>
+            <ol>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Monitoring.html">Monitoring</a></li>
+                <li><a href="Services.html">Services</a></li>
+                <li><a href="Contact.html">Contact page</a></li>
+            </ol>
+        </nav>
+    </header>
+    
+    <div class="overall">
+        <div class="gray-rectangle">
+            <div class="titleText"> <h2 > Please fill out the form below, and an agent will reach out to you</h2></div>
+    </div>
+    <div class="container">
+        <img src="Pictues/an-infographic-depicting-cyber-threats-e60231-1024.jpg" alt="Cyber Threats">
+        
+        
+       
+        <div class="form-container">
+            <h2>Contact Us</h2>
+            <form action="#" method="post">
+                <div class="form-group">
+                    <label for="full-name">Full Name:</label>
+                    <input type="text" id="full-name" name="full-name" required>
+                </div>
+                <div class="form-group">
+                    <label for="company-name">Company Name:</label>
+                    <input type="text" id="company-name" name="company-name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="service">Choose a Service:</label>
+                    <select id="service" name="service">
+                        <option value="None">N/A</option>
+                        <option value="Auditing">Auditing</option>
+                        <option value="Education">Employee Education</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="monitoring">Choose a Monitoring Product:</label>
+                    <select id="monitoring" name="monitoring">
+                        <option value="None">N/A</option>
+                        <option value="NIDS">Network Intrusion detection system</option>
+                        <option value="NIPS">Network Intrusion prevention system</option>
+                        <option value="SIEM">System Incident Event Manger</option>
+                        <option value="EDR">Endpoint Detection Response</option>
+                        <option value="Threat hunting">Threat hunting</option>
+                        <option value="Pentest">Penetration Testing</option>
+                        <option value="SIM-APT">Simulating Advanced Persistent Threat actors (APT)</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="issue-description">Short Description of Issue:</label>
+                    <textarea id="issue-description" name="issue-description" required></textarea>
+                </div>
+                <div class="form-group">
+                    <button type="submit">Submit</button>
+                </div>
+            </form>
+            </div>
+        </div>
+    </div>
+
+           
+        
+
+<footer id="footer">
+    <nav>
+           
+        <div class="brand">
+            <h3 class="guard">CryptoGuard</h3>
+            <a id="logolink1" href="index.html">
+                <img src="pictues/Logo.jpg" width="130" height="100" alt="Logo">
+                <h3 style="color: white;">Copyright &copy; 2024 CryptoGuard LLC. All rights reserved.</h3>
+            </a>
+        </div>
+        <ol>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Monitoring.html">Monitoring</a></li>
+            <li><a href="Services.html">Services</a></li>
+            <li><a href="Contact.html">Contact page</a></li>
+        </ol>
+    </nav>
+       
+   </footer>
+
+
+
+
+</body>
+</html>
