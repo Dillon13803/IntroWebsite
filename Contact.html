@@ -14,32 +14,7 @@
   gtag('config', 'G-N52J46TV3Y');
 
   
-    document.addEventListener("DOMContentLoaded", function() {
-        const form = document.querySelector('form');
-
-        form.addEventListener('submit', function(event) {
-            event.preventDefault(); 
-
-            
-            const fullName = document.getElementById('full-name').value.trim();
-            const companyName = document.getElementById('company-name').value.trim();
-            const email = document.getElementById('email').value.trim();
-            const service = document.getElementById('service').value;
-            const monitoring = document.getElementById('monitoring').value;
-            const issueDescription = document.getElementById('issue-description').value.trim();
-
-            
-            if (fullName === '' || companyName === '' || email === '' || service === 'None' || monitoring === 'None' || issueDescription === '') {
-                alert('Please fill out all fields.');
-                return; 
-            }
-
-
-            
-            form.submit();
-        });
-    });
-
+   
 
 </script>
 
